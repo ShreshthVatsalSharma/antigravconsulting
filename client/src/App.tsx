@@ -36,7 +36,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <WouterRouter base="/antigravconsulting">
+        <WouterRouter base={import.meta.env.BASE_URL}>
           <div className="min-h-screen flex flex-col font-sans text-foreground bg-background">
             <Navbar />
             <main className="flex-grow">
