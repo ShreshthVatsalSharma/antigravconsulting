@@ -1,0 +1,20 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+
+# Local editor / tool state
+.local/
+
+# OS junk
+.DS_Store
+
+# Backend public assets (generated)
+server/public
+
+# Vite temp configs
+vite.config.ts.*
+
+# Archives
+*.tar.gz
