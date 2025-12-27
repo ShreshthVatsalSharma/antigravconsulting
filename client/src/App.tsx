@@ -1,11 +1,13 @@
-import { Switch, Route } from "wouter";
-import { queryClient } from "./lib/queryClient";
+import { Switch, Route, Router as WouterRouter } from "wouter";
 import { QueryClientProvider } from "@tanstack/react-query";
-import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import NotFound from "@/pages/not-found";
+import { Toaster } from "@/components/ui/toaster";
+
+import { queryClient } from "./lib/queryClient";
+
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+
 import Home from "@/pages/Home";
 import Services from "@/pages/Services";
 import About from "@/pages/About";
@@ -13,8 +15,9 @@ import Contact from "@/pages/Contact";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import TermsOfService from "@/pages/TermsOfService";
 import Legal from "@/pages/Legal";
+import NotFound from "@/pages/not-found";
 
-function Router() {
+function Routes() {
   return (
     <Switch>
       <Route path="/" component={Home} />
@@ -33,13 +36,15 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <div className="min-h-screen flex flex-col font-sans text-foreground bg-background">
-          <Navbar />
-          <main className="flex-grow">
-            <Router />
-          </main>
-          <Footer />
-        </div>
+        <WouterRouter base="/antigravconsulting">
+          <div className="min-h-screen flex flex-col font-sans text-foreground bg-background">
+            <Navbar />
+            <main className="flex-grow">
+              <Routes />
+            </main>
+            <Footer />
+          </div>
+        </WouterRouter>
         <Toaster />
       </TooltipProvider>
     </QueryClientProvider>
