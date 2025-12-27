@@ -23,6 +23,7 @@ export default defineConfig({
         ]
       : []),
   ],
+  base: "/antigravconsulting/",
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
