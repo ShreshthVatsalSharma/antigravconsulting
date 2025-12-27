@@ -79,7 +79,7 @@ export default function About() {
                   <p className="text-sm text-muted-foreground">Co-founder</p>
                 </div>
                 <div className="space-y-4 text-muted-foreground">
-                  <p>Management student at IIM Ranchi. B.Tech in Computer Science & Engineering from IIT Jodhpur.</p>
+                  <p>Management student (MBA) at IIM Ranchi. B.Tech in Computer Science & Engineering from IIT Jodhpur.</p>
                   <p>Shreshth brings a unique blend of analytical rigor, technology orientation, and strategic problem-solving to the firm. His background ensures a data-backed approach to market entry.</p>
                 </div>
               </div>
@@ -87,15 +87,15 @@ export default function About() {
 
             <div className="rounded-2xl bg-white border border-border hover:shadow-lg transition-shadow overflow-hidden">
               <div className="h-64 overflow-hidden">
-                <img src={tahirImage} alt="Tahir Khan" className="w-full h-full object-cover" />
+                <img src={tahirImage} alt="Mohammad Tahir Khan" className="w-full h-full object-cover" />
               </div>
               <div className="p-8">
                 <div className="mb-6">
-                  <h3 className="text-xl font-bold text-primary mb-1">Tahir Khan</h3>
+                  <h3 className="text-xl font-bold text-primary mb-1">Mohammad Tahir Khan</h3>
                   <p className="text-sm text-muted-foreground">Co-founder</p>
                 </div>
                 <div className="space-y-4 text-muted-foreground">
-                  <p>Management student at IIM Ranchi.</p>
+                  <p>Management student (MBA) at IIM Ranchi.</p>
                   <p>Tahir specializes in market understanding, sales strategy, and commercial execution. He ensures that strategies are not just theoretically sound but practically viable in the complex Indian market.</p>
                 </div>
               </div>

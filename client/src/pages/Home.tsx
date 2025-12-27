@@ -171,7 +171,7 @@ export default function Home() {
                 <div className="flex gap-4 items-start">
                    <img src={tahirImage} alt="Tahir Khan" className="h-12 w-12 rounded-full object-cover shrink-0" />
                    <div>
-                     <h4 className="font-bold text-lg text-white">Tahir Khan</h4>
+                     <h4 className="font-bold text-lg text-white">Mohammad Tahir Khan</h4>
                      <p className="text-sm text-white/60 mb-2">Co-founder | IIM Ranchi</p>
                      <p className="text-sm text-white/60 font-semibold mb-1">Vision</p>
                      <p className="text-sm text-white/80">To be the most trusted strategic partner and bridge for global businesses entering and scaling in the Indian market.</p>
